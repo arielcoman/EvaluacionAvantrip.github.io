@@ -277,7 +277,7 @@ display: flex;
 	body{
 		display: grid;
 		gap: 3%;
-		grid-template-rows: 50% auto;
+		grid-template-rows: auto auto;
 		grid-template-areas: 'hd' 'ch';
 		grid-template-columns: 100%;
 	}
@@ -458,7 +458,7 @@ width: 100%;
 	body{
 		display: grid;
 		gap: 3%;
-		grid-template-rows: 50% auto;
+		grid-template-rows: auto auto;
 		grid-template-areas: 'hd' 'ch';
 		grid-template-columns: 100%;
 	}
