@@ -11,7 +11,7 @@ body{
 	grid-template-columns: 15% 70% 15%;
 	grid-template-rows: 55vh auto;
 	grid-template-areas:'hd hd hd'
-						'bb ch aa'
+						'ch ch ch'
 }
 
 
@@ -86,14 +86,12 @@ display: flex;
 	border-radius: 9px;
 	margin-right:0.2%;
 
+
 }
 
 .inputLugares label{
-	font-size: 0.8em;
-	color: grey;
-
-
-	
+	font-size: 1.4em;
+	color: grey;	
 }
 
 
@@ -101,7 +99,8 @@ display: flex;
 input{
 	border: 0;
 	padding:3% 3% 3% 0%;
-	font-size: 1.3em;
+	font-size: 1.6em;
+	color: grey;
 	
 }
 
@@ -146,7 +145,7 @@ button{
 	border:0;
 	background-color: transparent;
 	color: white;
-	font-size:1.1em;
+	font-size:1.6em;
 	font-weight: 400;
 	cursor: pointer;
 }
@@ -165,21 +164,26 @@ button:hover{
 
 }
 
+
+
 .containerGrafico{
 	display: flex;
 	/*height: 500px !important;*/
 	margin-top: 2%;
 	margin-bottom: 2%;
 	flex-direction: column;
-	background-color: white;
+	background-color: #efefef;
 	width: 100%;
+	align-items: center;
 
+}
+
+.containerIntermedio{
+	display: flex;
+	width: 70%;
+	flex-direction: column;
 	
-
-
-
-
-
+	
 }
 
 .chart-container{
@@ -190,6 +194,7 @@ button:hover{
 	display: flex;
 	border-bottom: 1px solid #efefef;
 	justify-content: space-between;
+	background-color: white;
 	
 
 
@@ -265,13 +270,18 @@ display: flex;
 
 
 @media only screen and (max-width: 767.98px)  { 
-
-
-
+	body{
+		display: grid;
+		gap: 3%;
+		grid-template-rows: 50% auto;
+		grid-template-areas: 'hd' 'ch';
+		grid-template-columns: 100%;
+	}
+	
 #backImage{
 	background-image: none;
-	height: auto;
-	padding-bottom: 2%;
+	grid-area: hd;
+	
 }
 
 #busqueda{
@@ -390,7 +400,7 @@ width: 100%;
 
 .formBusqueda label{
 	font-size: 1.6em;
-	color: grey
+	
 }
 
 .inputsearch{
@@ -415,10 +425,18 @@ width: 100%;
 }
 
 .grafico{
-	height: auto;
+	grid-area: ch;
 }
+
+.containerIntermedio{
+		width: 95%;
+
+}
+
+
+
 .containerGrafico{
-	width: 90%;
+	width: 100%;
 	height: auto;
 }
 
@@ -434,14 +452,18 @@ width: 100%;
 
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
-
-
+	body{
+		display: grid;
+		gap: 3%;
+		grid-template-rows: 50% auto;
+		grid-template-areas: 'hd' 'ch';
+		grid-template-columns: 100%;
+	}
+	
 #backImage{
 	background-image: none;
+	grid-area: hd;
 	
-	width: 100%;
-	height: auto;
-	padding-bottom: 2%;
 }
 
 #busqueda{
@@ -575,28 +597,70 @@ display: flex;
 	width: 6%;
 }
 .containerGrafico{
-	width: 90%;
+	width: 100%;
 	
 }
+.grafico{
+	grid-area: ch;
+}
 
+.containerIntermedio{
+	width: 95%;
+
+}
 
  }
 
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) { 
-
-	#backImage{
-	height: 45vh;
-}
+body {
+		
+		grid-template-columns:10% 80% 10%;
+		
+		grid-template-rows: 45vh 55vh;
+		grid-template-areas: 'hd hd hd' 'ch ch ch';
+	}
+	
 
 .contBusqueda{
-	margin-top: 12%;
-	width: 95%;
+	width: 85%;
 }
 
-.containerGrafico{
-	width: 90%;
+
+.opcionSeleccionada{
+	width: 30%;
+
+}
+.opcionNoSeleccionada{
+	width: 30%;
+
+}
+
+.inputLugares input{
+		width: 100%;
+		font-size: 1.3em;
+		
+}
+.inputLugares label{
+	width: 100%;
+	font-size: 1.3em;
 	
 }
+button{
+	font-weight:400;
+	font-size: 1.3em;
+}
+.searchButton {
+	
+	width: 100%;
 
- }
+}
+.grafico{
+	grid-area: ch ;
+}
+.containerIntermedio{
+	width: 85%;
+}
+
+
+}
