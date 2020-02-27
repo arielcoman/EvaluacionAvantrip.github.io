@@ -81,7 +81,7 @@ display: flex;
 	background-color: white;
 	display: inline-flex;
 	flex-direction: column;
-	padding: 1%;
+	padding: 3%;
 	width:49%;
 	border-radius: 9px;
 	margin-right:0.2%;
@@ -90,7 +90,7 @@ display: flex;
 }
 
 .inputLugares label{
-	font-size: 1.4em;
+	font-size: 1.1em;
 	color: grey;	
 }
 
@@ -99,7 +99,7 @@ display: flex;
 input{
 	border: 0;
 	padding:3% 3% 3% 0%;
-	font-size: 1.6em;
+	font-size: 1.3em;
 	color: grey;
 	
 }
