@@ -233,7 +233,9 @@ display: inline-flex;
 	display: flex;
 	color:black;
 	font-weight: 600;
-	flex-direction: column
+	flex-direction: column;
+	height: auto;
+	
 }
 .mes:hover .minValueMes{
 	color: #25a2dc;
