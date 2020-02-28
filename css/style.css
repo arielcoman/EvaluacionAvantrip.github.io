@@ -195,7 +195,7 @@ button:hover{
 	border-bottom: 1px solid #efefef;
 	justify-content: space-between;
 	background-color: white;
-	height: 8vh;
+	height: auto;
 	
 
 
@@ -208,7 +208,7 @@ button:hover{
 	align-content: center;
 	padding-left: 1.5%;
 	padding-right: 1.5%;
-	height: 8vh;
+	height: auto;
 }
 
 .iconoNext img {
@@ -273,7 +273,7 @@ display: flex;
 }
 
 
-@media only screen and (max-width: 767.98px)  { 
+@media  (max-width: 768px)  { 
 	body{
 		display: grid;
 		gap: 3%;
@@ -437,23 +437,6 @@ width: 100%;
 
 }
 
-
-
-.containerGrafico{
-	
-}
-
-.chart-container{
-	
-	
-}
-
-
-}
-
-
-
-
 @media (min-width: 768px) and (max-width: 991.98px) { 
 	body{
 		display: grid;
@@ -611,6 +594,8 @@ display: flex;
 	width: 95%;
 
 }
+
+
 
  }
 
