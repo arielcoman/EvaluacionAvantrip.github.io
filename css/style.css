@@ -223,7 +223,7 @@ display: inline-flex;
 	width: 15%;
 
 }
-.-selected{
+.selected{
 	display: inline-flex;
 	flex-direction: column;
 	margin:1% 1% 0 1%;
@@ -237,6 +237,7 @@ display: inline-flex;
 	font-weight: 600;
 	flex-direction: column;
 	height: auto;
+	align-items:center;
 	
 }
 .mes:hover .minValueMes{
@@ -273,9 +274,7 @@ display: flex;
 }
 
 
-@media  (max-width: 768px)  { 
-	
-
+@media  (max-width: 768px) { 
 	body{
 		display: grid;
 		gap: 3%;
@@ -459,6 +458,38 @@ font-size: 1em;
 	height: 36vh;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+
+.meses{
+	height: 20vh;
+}
+
+.chart-container{
+	height: 57vh;
+}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+	.meses{
+		height: 20vh;
+	}
+	
+	.chart-container{
+		height: 57vh;
+	}
+
+}
+
+
 
 @media (min-width: 767.5px) and (max-width: 800px) { 
 
@@ -481,8 +512,11 @@ font-size: 1em;
 	}
 
 	.containerIntermedio{
-		width: 120%;
+		width: 95%;
 
+}
+.containerGrafico {
+    align-items: center;
 }
 }
 @media (min-width: 800px) and (max-width: 991.98px) { 
