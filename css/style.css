@@ -219,21 +219,29 @@ button:hover{
 .opcionesMeses{
 display: inline-flex;
 	flex-direction: column;
+	
 	margin:1% 1% 0 1%;
 	width: 15%;
+	color: black;
 
 }
+
 .selected{
+	color:#25a2dc;
+	font-weight: 600;
 	display: inline-flex;
 	flex-direction: column;
 	margin:1% 1% 0 1%;
 	border-bottom: 1px solid #25a2dc;
 	width: 15%;
-
 }
+.selected span{
+	color:#25a2dc;
+}
+
 .mes{
 	display: flex;
-	color:black;
+	color:inherit;
 	font-weight: 600;
 	flex-direction: column;
 	height: auto;
@@ -250,28 +258,15 @@ display: inline-flex;
 
 }
 
-
-
 .minValueMes{
 	color:#c2c1c1;
 		font-weight: 600;
 		align-self: center;
 
 }
-.Selected{
-display: flex;
-	flex-direction: column;
-	color:#25a2dc;
-	font-weight: 600;
-
-}
-.minValueMes-Selected{
-	color:#25a2dc;
-		font-weight: 600;
-		align-self: center;
 
 
-}
+
 
 
 @media  (max-width: 768px) { 
@@ -333,26 +328,26 @@ button{
 
 }
 
-.opcionNoSeleccionada{
+.opcion{
 	width: 32%;
 justify-content: center;
 display: flex;
 padding: 1%;
 }
 
-.opcionSeleccionada {
+.Seleccionada {
 	background-color: #e80010;
 	border-radius: 9px;
 	width: 32%;
 justify-content: center;
 display: flex;
+color: white
 
 }
-
-.opcionSeleccionada button {
-	color: white
-
+.Seleccionada button{
+color: inherit;
 }
+
 .form{
 	border-radius: 10px;
 
@@ -411,7 +406,7 @@ width: 100%;
 .inputsearch{
 	display: flex;
 	width: 100%;
-	justify-content: center;
+	justify-content: flex-end;
 }
 
 .searchButton {
@@ -651,14 +646,14 @@ display: flex;
 .inputsearch{
 
 	width: 100%;
-	justify-content: center;
+	justify-content: flex-end;
 }
 
 .searchButton {
 
 	width: 30%;
 	border-radius: 9px;
-}
+}s
 
 .searchButton img{
 	padding: 1.2%;
