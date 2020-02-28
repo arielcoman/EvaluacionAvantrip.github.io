@@ -195,6 +195,7 @@ button:hover{
 	border-bottom: 1px solid #efefef;
 	justify-content: space-between;
 	background-color: white;
+	height: 8vh;
 	
 
 
@@ -207,6 +208,7 @@ button:hover{
 	align-content: center;
 	padding-left: 1.5%;
 	padding-right: 1.5%;
+	height: 8vh;
 }
 
 .iconoNext img {
@@ -233,7 +235,9 @@ display: inline-flex;
 	display: flex;
 	color:black;
 	font-weight: 600;
-	flex-direction: column
+	flex-direction: column;
+	height: auto;
+	
 }
 .mes:hover .minValueMes{
 	color: #25a2dc;
@@ -273,7 +277,7 @@ display: flex;
 	body{
 		display: grid;
 		gap: 3%;
-		grid-template-rows: 50% auto;
+		grid-template-rows: auto auto;
 		grid-template-areas: 'hd' 'ch';
 		grid-template-columns: 100%;
 	}
@@ -436,12 +440,11 @@ width: 100%;
 
 
 .containerGrafico{
-	width: 100%;
-	height: auto;
+	
 }
 
 .chart-container{
-	height:30vh;
+	
 	
 }
 
@@ -455,7 +458,7 @@ width: 100%;
 	body{
 		display: grid;
 		gap: 3%;
-		grid-template-rows: 50% auto;
+		grid-template-rows: auto auto;
 		grid-template-areas: 'hd' 'ch';
 		grid-template-columns: 100%;
 	}
