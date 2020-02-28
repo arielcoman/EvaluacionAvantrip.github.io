@@ -439,6 +439,9 @@ width: 100%;
 .meses{
 	height: 8vh;
 }
+.iconoNext{
+	height: 8vh;}
+	
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
 	body{
