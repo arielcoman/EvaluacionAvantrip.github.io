@@ -329,7 +329,7 @@ button{
 }
 
 .opcion{
-	width: 32%;
+	width: 33%;
 justify-content: center;
 display: flex;
 padding: 1%;
@@ -338,7 +338,7 @@ padding: 1%;
 .Seleccionada {
 	background-color: #e80010;
 	border-radius: 9px;
-	width: 32%;
+	width: 33%;
 justify-content: center;
 display: flex;
 color: white
@@ -590,17 +590,12 @@ button{
 
 }
 
-.opcionNoSeleccionada{
-	width: 32%;
-justify-content: center;
-display: flex;
-padding: 1%;
-}
 
-.opcionSeleccionada {
+
+.Seleccionada {
 	background-color: #e80010;
 	border-radius: 9px;
-	width: 32%;
+	width: 33%;
 justify-content: center;
 display: flex;
 
