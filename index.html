@@ -476,18 +476,18 @@ var myChart = new Chart(ctx, {
    
     data: 
     {
-
+        
         labels:days,
         datasets: [{
           barPercentage:0.5,
           maxBarThickness: 18,
-
+          
         	backgroundColor: color,    
             data: datas,         
         }]
     },
     options: {
-
+      
     	lineAt: minValue,
     	 tooltips: {
         enabled: true,
@@ -510,7 +510,7 @@ var myChart = new Chart(ctx, {
       radius: 25,
       hoverRadius: 35,
       pointStyle: 'rectRounded',
-
+     
     }},
   
     	 maintainAspectRatio: false,
@@ -520,10 +520,10 @@ var myChart = new Chart(ctx, {
                     display: true,
                 },
                		  stacked: true,
-                   
+                    
                     ticks: {
-                      
-                      lineHeight:0.5,
+                      fontSize:17,
+                      lineHeight:0.7,
                       fontColor:' #25a4db',
                       backgroundColor:color,
                     autoSkip: false,
