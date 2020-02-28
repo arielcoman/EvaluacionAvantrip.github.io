@@ -223,7 +223,7 @@ display: inline-flex;
 	width: 15%;
 
 }
-.opcionesMeses-selected{
+.-selected{
 	display: inline-flex;
 	flex-direction: column;
 	margin:1% 1% 0 1%;
@@ -257,7 +257,7 @@ display: inline-flex;
 		align-self: center;
 
 }
-.mes-Selected{
+.Selected{
 display: flex;
 	flex-direction: column;
 	color:#25a2dc;
@@ -274,6 +274,8 @@ display: flex;
 
 
 @media  (max-width: 768px)  { 
+	
+
 	body{
 		display: grid;
 		gap: 3%;
@@ -428,22 +430,62 @@ width: 100%;
 	width: 6%;
 }
 
-.grafico{
-	grid-area: ch;
+#grafico{
+
+	overflow: auto;
+}
+.containerGrafico{
+	align-items: flex-start;
 }
 
 .containerIntermedio{
-		width: 95%;
+		width: 180%;
 
 }
 .meses{
-	height: 8vh;
+	height: 11vh;
 }
-.iconoNext{
-	height: 8vh;}
-	
+.mes{
+	font-size: 1.5em;
+}
+.minValueMes{
+font-size: 1em;
+}
 
-@media (min-width: 768px) and (max-width: 991.98px) { 
+.minValueMesSelected{
+	font-size: 1em;
+	}
+.chart-container{
+	height: 36vh;
+}
+
+
+@media (min-width: 767.5px) and (max-width: 800px) { 
+
+	.meses{
+		height: 4vh;
+	}
+	.searchButton {
+
+		width: 30%;
+		border-radius: 9px;
+	}
+	.meses{
+		height: 6vh;
+	}
+	.mes{
+		font-size: 1.5em;
+	}
+	.minValueMes{
+	font-size: 1em;
+	}
+
+	.containerIntermedio{
+		width: 120%;
+
+}
+}
+@media (min-width: 800px) and (max-width: 991.98px) { 
 	body{
 		display: grid;
 		gap: 3%;
@@ -602,8 +644,7 @@ display: flex;
 }
 
 
-
- }
+}
 
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) { 
