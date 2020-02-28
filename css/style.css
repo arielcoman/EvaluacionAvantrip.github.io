@@ -438,14 +438,14 @@ width: 100%;
 }
 
 .containerIntermedio{
-		width: 180%;
+		width: 200%;
 
 }
 .meses{
-	height: 11vh;
+	height: 15vh;
 }
 .mes{
-	font-size: 1.5em;
+	font-size: 1.9em;
 }
 .minValueMes{
 font-size: 1em;
@@ -455,7 +455,7 @@ font-size: 1em;
 	font-size: 1em;
 	}
 .chart-container{
-	height: 36vh;
+	height: 40vh;
 }
 
 @media only screen 
